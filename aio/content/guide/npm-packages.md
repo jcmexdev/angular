@@ -9,7 +9,7 @@ Alternativamente puedes utilizar el [cliente yarn](https://yarnpkg.com/) para de
 
 <div class="alert is-helpful">
 
-Mira [Preparar Entorno Local](guide/setup-local "Preparandose para el desarrollo local") para ver informacion sobre la instalación y las versiones requeridas de `Node.js` y `npm`.
+Mira [Preparar Entorno Local](guide/setup-local "Preparandose para el desarrollo local") para ver informacion acerca de la instalación y las versiones requeridas de `Node.js` y `npm`.
 
 Si ya tenías proyectos previos en tu ordenador que utilizan otras versiones de Node.js y npm considera usar [nvm](https://github.com/creationix/nvm) para gestionar las diferentes versiones de Node.js y npm.
 
@@ -64,12 +64,12 @@ Nombre del Paquete                               | Descripción
 ----------------------------------------   | --------------------------------------------------
 [**@angular/animations**](api/animations) | La librería de animaciones de Angular hace sencillo definir y aplicar efectos animados como transiciones de página y listas. Para más información visita [la guía de Animations](guide/animations).
 [**@angular/common**](api/common) | Los servicios comunes necesarios, pipes, y directivas proveídas por el equipo de Angular. El [`HttpClientModule`](api/common/http/HttpClientModule) también está aquí, en la subcarpeta [`@angular/common/http`](api/common/http). Para más información visita [la guía de HttpClient](guide/http).
-**@angular/compiler** | El compilador de templates de Angular. Entiende los templates y los puede convertir a código que hace que la aplicación se ejecute y renderice. Habitualmente no interactúas con el compilador directamente; Más bien lo usas indirectamente a través del `platform-browser-dynamic` cuando se compila en el navegador en tiempo de ejecución (JIT). Para más información visita [la guía de compilación AOT (Ahead-of-time)](guide/aot-compiler).
+**@angular/compiler** | El compilador de plantillas de Angular. Entiende las plantillas y las puede convertir a código que hace que la aplicación se ejecute y renderice. Habitualmente no interactúas con el compilador directamente; Más bien lo usas indirectamente a través del `platform-browser-dynamic` cuando se compila en el navegador en tiempo de ejecución (JIT). Para más información visita [la guía de compilación AOT (Ahead-of-time)](guide/aot-compiler).
 [**@angular/core**](api/core) | Partes críticas del Framework requeridas por cualquier aplicación en el tiempo de ejecución. Incluye todos los decoradores de los metadatos, `Components`, `Directives`, inyección de dependencias y los ciclos de vida de los componentes.
-[**@angular/forms**](api/forms) | Soporte para formularios [template-driven](guide/forms) y [reactive forms](guide/reactive-forms). Para más información sobre cual es la mejor implementación de los formularios para tu aplicación visita [Introducción a los formularios](guide/forms-overview).
-[**@angular/<br />platform&#8209;browser**](api/platform-browser) | Todo lo relacionado con el DOM y el navegador, especialmente las piezas que ayudan a renderizar el DOM. Este paquete también incluye el método `bootstrapModuleFactory()` para preparar aplicaciones para builds de producción que pre-compilan con [AOT](guide/aot-compiler).
+[**@angular/forms**](api/forms) | Soporte para formularios [template-driven](guide/forms) y [reactive forms](guide/reactive-forms). Para más información acerca de cual es la mejor implementación de los formularios para tu aplicación visita [Introducción a los formularios](guide/forms-overview).
+[**@angular/<br />platform&#8209;browser**](api/platform-browser) | Todo lo relacionado con el DOM y el navegador, especialmente las piezas que ayudan a renderizar el DOM. Este paquete también incluye el método `bootstrapModuleFactory()` para cargar aplicaciones para builds de producción que pre-compilan con [AOT](guide/aot-compiler).
 [**@angular/<br />platform&#8209;browser&#8209;dynamic**](api/platform-browser-dynamic) | Incluye [providers](api/core/Provider) y métodos para compilar y ejecutar la aplicación en el cleinte utilizando el [compilador JIT](guide/aot-compiler).
-[**@angular/router**](api/router) | El módulo de enrutamiento navega a través de las páginas de tu aplicación cuando la URL cambia. Para más información visita [Routing and Navigation](guide/router).
+[**@angular/router**](api/router) | El módulo enrutador navega a través de las páginas de tu aplicación cuando la URL cambia. Para más información visita [Routing and Navigation](guide/router).
 
 
 {@a support-packages}
@@ -113,7 +113,7 @@ Las siguientes `devDependencies` se proveen en el archivo `package.json` por def
 
 Nombre del Paquete                               | Descripción
 ----------------------------------------   | -----------------------------------
-[**@angular&#8209;devkit/<br />build&#8209;angular**](https://github.com/angular/angular-cli/) | Las herramientas de construcción de Angular.
+[**@angular&#8209;devkit/<br />build&#8209;angular**](https://github.com/angular/angular-cli/) | Las herramientas de creación de Angular.
 [**@angular/cli**](https://github.com/angular/angular-cli/) | Las herramientas del CLI de Angular.
 **@angular/<br />compiler&#8209;cli** | El compilador de Angular, el cual es invocado por el CLI de Angular mediante los comandos `ng build` y `ng serve`.
 **@types/... ** | Archivos Typescript de definición de librerías de terceros como Jasmine y Node.js.
@@ -128,8 +128,8 @@ Nombre del Paquete                               | Descripción
 
 ## Información relacionada
 
- Para obtener información sobre cómo el CLI de Angular maneja los paquetes visita las siguientes guías:
+ Para obtener información acerca de cómo el CLI de Angular maneja los paquetes visita las siguientes guías:
 
- * [Compilando y sirviendo](guide/build) describe como los paquetes se unen para crear una build de desarrollo.
+ * [Creando y sirviendo](guide/build) describe como los paquetes se unen para crear una build de desarrollo.
  * [Desplegando](guide/deployment) describe como los paquetes se unen para crear una build de producción.
  
