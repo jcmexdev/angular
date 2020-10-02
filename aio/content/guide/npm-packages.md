@@ -1,6 +1,6 @@
 # Área de trabajo de las dependencias de npm
 
-El Framework de Angular, el CLI de Angular y los componentes usados por las aplicaciones Angular se empaquetan como [paquetes de npm](https://docs.npmjs.com/getting-started/what-is-npm "Qué es npm?") y se distribuyen a través del [registro de npm](https://docs.npmjs.com/).
+El Framework Angular, el CLI de Angular y los componentes usados por las aplicaciones Angular se empaquetan como [paquetes de npm](https://docs.npmjs.com/getting-started/what-is-npm "Qué es npm?") y se distribuyen a través del [registro de npm](https://docs.npmjs.com/).
 
 Puedes descargar e instalar esos paquetes de npm utilizando el [cliente CLI de npm](https://docs.npmjs.com/cli/install), el cual se instala y ejecuta como una aplicación de [Node.js®](https://nodejs.org "Nodejs.org"). Por defecto el CLI de Angular utiliza el cliente de npm.
 
@@ -11,7 +11,7 @@ Alternativamente puedes utilizar el [cliente yarn](https://yarnpkg.com/) para de
 
 Mira [Preparar Entorno Local](guide/setup-local "Preparandose para el desarrollo local") para ver informacion acerca de la instalación y las versiones requeridas de `Node.js` y `npm`.
 
-Si ya tenías proyectos previos en tu ordenador que utilizan otras versiones de Node.js y npm considera usar [nvm](https://github.com/creationix/nvm) para gestionar las diferentes versiones de Node.js y npm.
+Si ya tenías proyectos anteriores en tu máquina que utilizan otras versiones de Node.js y npm considera usar [nvm](https://github.com/creationix/nvm) para gestionar las diferentes versiones de Node.js y npm.
 
 </div>
 
@@ -23,7 +23,7 @@ Tanto `npm` como `yarn` instalan los paquetes que están identificados en un arc
 El comando del CLI `ng new` genera un archivo `package.json` al crear el proyecto.
 Este `package.json` es usado por todos los proyectos en el entorno incluyendo el proyecto inicial generado por el CLI al crear este entorno.
 
-Inicialmente este `package.json` incluye _una serie de paquetes_, algunos de ellos requeridos por Angular y otros que soportan escenarios comunes de aplicación.
+Inicialmente este `package.json` incluye _una serie de paquetes_, algunos de ellos necesarios para Angular y otros que soportan escenarios comunes de aplicación.
 Puedes añadir paquetes al `package.json` según tu aplicación crece.
 También puedes borrarlos si es necesario.
 
@@ -46,11 +46,11 @@ Los paquetes listados en la sección `dependencies` del `package.json` son esenc
 
 La sección `dependencies` del `package.json` contiene:
 
-* [**Paquetes de Angular**](#angular-packages): El núcleo de Angular (Angular Core) y módulos opcionales; El nombre de estos paquetes comienza por `@angular/`.
+* [**Paquetes de Angular**](#angular-packages): El núcleo de Angular y módulos opcionales; El nombre de estos paquetes comienza por `@angular/`.
 
 * [**Paquetes de soporte**](#support-packages): Librerías de terceros que son necesarias para que las aplicaciones de Angular se puedan ejecutar.
 
-* [**Paquetes de Polyfill**](#polyfills): Polyfills "rellenan huecos" en la implementación de Javascript de un navegador.
+* [**Paquetes de Polyfill**](#polyfills): Los Polyfills rellenan huecos en la implementación de Javascript de un navegador.
 
 Para añadir una nueva dependencia usa el comando [`ng add`](cli/add).
 
@@ -66,10 +66,10 @@ Nombre del Paquete                               | Descripción
 [**@angular/common**](api/common) | Los servicios comunes necesarios, pipes, y directivas proveídas por el equipo de Angular. El [`HttpClientModule`](api/common/http/HttpClientModule) también está aquí, en la subcarpeta [`@angular/common/http`](api/common/http). Para más información visita [la guía de HttpClient](guide/http).
 **@angular/compiler** | El compilador de plantillas de Angular. Entiende las plantillas y las puede convertir a código que hace que la aplicación se ejecute y renderice. Habitualmente no interactúas con el compilador directamente; Más bien lo usas indirectamente a través del `platform-browser-dynamic` cuando se compila en el navegador en tiempo de ejecución (JIT). Para más información visita [la guía de compilación AOT (Ahead-of-time)](guide/aot-compiler).
 [**@angular/core**](api/core) | Partes críticas del Framework requeridas por cualquier aplicación en el tiempo de ejecución. Incluye todos los decoradores de los metadatos, `Components`, `Directives`, inyección de dependencias y los ciclos de vida de los componentes.
-[**@angular/forms**](api/forms) | Soporte para formularios [template-driven](guide/forms) y [reactive forms](guide/reactive-forms). Para más información acerca de cual es la mejor implementación de los formularios para tu aplicación visita [Introducción a los formularios](guide/forms-overview).
+[**@angular/forms**](api/forms) | Soporte para formularios de tipo [template-driven](guide/forms) y [reactive forms](guide/reactive-forms). Para más información acerca de cual es la mejor implementación de los formularios para tu aplicación visita [Introducción a los formularios](guide/forms-overview).
 [**@angular/<br />platform&#8209;browser**](api/platform-browser) | Todo lo relacionado con el DOM y el navegador, especialmente las piezas que ayudan a renderizar el DOM. Este paquete también incluye el método `bootstrapModuleFactory()` para cargar aplicaciones para builds de producción que pre-compilan con [AOT](guide/aot-compiler).
-[**@angular/<br />platform&#8209;browser&#8209;dynamic**](api/platform-browser-dynamic) | Incluye [providers](api/core/Provider) y métodos para compilar y ejecutar la aplicación en el cleinte utilizando el [compilador JIT](guide/aot-compiler).
-[**@angular/router**](api/router) | El módulo enrutador navega a través de las páginas de tu aplicación cuando la URL cambia. Para más información visita [Routing and Navigation](guide/router).
+[**@angular/<br />platform&#8209;browser&#8209;dynamic**](api/platform-browser-dynamic) | Incluye [providers](api/core/Provider) y métodos para compilar y ejecutar la aplicación en el cliente utilizando el [compilador JIT](guide/aot-compiler).
+[**@angular/router**](api/router) | El módulo enrutador navega a través de las páginas de tu aplicación cuando la URL cambia. Para más información visita [Enrutado y Navegación](guide/router).
 
 
 {@a support-packages}
@@ -80,8 +80,8 @@ Los siguientes paquetes de soporte están incluidos como dependencias en el arch
 
 Nombre del Paquete                               | Descripción
 ----------------------------------------   | --------------------------------------------------
-[**rxjs**](https://github.com/ReactiveX/rxjs) | Muchas APIs de Angular retornan [_observables_](guide/glossary#observable). RxJS es una implementación de la propuesta de [especificación de Observables](https://github.com/tc39/proposal-observable) actualmente antes del comité [TC39](https://www.ecma-international.org/memento/tc39.htm) que determina los estándares para el lenguaje JavaScript.
-[**zone.js**](https://github.com/angular/zone.js) | Angular depende de zone.js para ejecutar el proceso de detección de cambios de Angular cuando operaciones de JavaScript nativas lanzan eventos. Zone.js es una implementación de la [especificación](https://gist.github.com/mhevery/63fdcdf7c65886051d55) actualmente antes del comité [TC39](https://www.ecma-international.org/memento/tc39.htm) que determina los estándares para el lenguaje JavaScript.
+[**rxjs**](https://github.com/ReactiveX/rxjs) | Muchas APIs de Angular retornan [_observables_](guide/glossary#observable). RxJS es una implementación de la propuesta actual de [especificación de Observables](https://github.com/tc39/proposal-observable) antes del comité [TC39](https://www.ecma-international.org/memento/tc39.htm) que determina los estándares para el lenguaje JavaScript.
+[**zone.js**](https://github.com/angular/zone.js) | Angular depende de zone.js para ejecutar el proceso de detección de cambios de Angular cuando operaciones de JavaScript nativas lanzan eventos. Zone.js es una implementación actual de la [especificación](https://gist.github.com/mhevery/63fdcdf7c65886051d55) antes del comité [TC39](https://www.ecma-international.org/memento/tc39.htm) que determina los estándares para el lenguaje JavaScript.
 
 
 {@a polyfills}
