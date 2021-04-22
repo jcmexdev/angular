@@ -46,7 +46,7 @@ Los paquetes listados en la sección `dependencies` del `package.json` son esenc
 
 La sección `dependencies` del `package.json` contiene:
 
-* [**Paquetes de Angular**](#angular-packages): El núcleo de Angular y módulos opcionales; El nombre de estos paquetes comienza por `@angular/`.
+* [**Paquetes de Angular**](#angular-packages): El núcleo de Angular y módulos opcionales; el nombre de estos paquetes comienza por `@angular/`.
 
 * [**Paquetes de soporte**](#support-packages): Librerías de terceros que son necesarias para que las aplicaciones de Angular se puedan ejecutar.
 
