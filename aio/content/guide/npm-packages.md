@@ -9,7 +9,7 @@ Alternativamente puedes utilizar el [cliente yarn](https://yarnpkg.com/) para de
 
 <div class="alert is-helpful">
 
-Mira [Preparar Entorno Local](guide/setup-local "Preparandose para el desarrollo local") para ver información acerca de la instalación y las versiones requeridas de `Node.js` y `npm`.
+Mira [Preparar Entorno Local](guide/setup-local "Preparándose para el desarrollo local") para ver información acerca de la instalación y las versiones requeridas de `Node.js` y `npm`.
 
 Si ya tenías proyectos anteriores en tu máquina que utilizan otras versiones de Node.js y npm considera usar [nvm](https://github.com/creationix/nvm) para gestionar las diferentes versiones de Node.js y npm.
 
