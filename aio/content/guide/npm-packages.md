@@ -2,7 +2,7 @@
 
 El framework Angular, el CLI de Angular y los componentes usados por las aplicaciones Angular se empaquetan como [paquetes de npm](https://docs.npmjs.com/getting-started/what-is-npm "¿Qué es npm?") y se distribuyen a través del [registro de npm](https://docs.npmjs.com/).
 
-Puedes descargar e instalar esos paquetes de npm utilizando el [cliente CLI de npm](https://docs.npmjs.com/cli/install), el cual se instala y ejecuta como una aplicación de [Node.js®](https://nodejs.org "Nodejs.org"). Por defecto el CLI de Angular utiliza el cliente de npm.
+Puedes descargar e instalar esos paquetes de npm utilizando el [cliente CLI de npm](https://docs.npmjs.com/cli/install), el cuál se instala y ejecuta como una aplicación de [Node.js®](https://nodejs.org "Nodejs.org"). Por defecto el CLI de Angular utiliza el cliente de npm.
 
 Alternativamente puedes utilizar el [cliente yarn](https://yarnpkg.com/) para descargar e instalar los paquetes de npm.
 
